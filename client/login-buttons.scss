@@ -1,0 +1,17 @@
+#login-dropdown-list{
+
+}
+
+#login-buttons a.login-link-text{
+  color: #FFF;
+}
+
+@media screen and (min-width: 768px) {
+
+  #login-dropdown-list{
+    left: auto;
+    right: -1px;
+    top: -8px;
+  }
+
+}

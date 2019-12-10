@@ -1,0 +1,25 @@
+<!-- /client/layout.html -->
+<template name="layout">
+    <nav class="navbar navbar-expand-md navbar-dark bg-dark">
+        <div class="container">
+            <a class="navbar-brand" href="/">D&amp;D5E Tools - Monster Builder</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar-collapsible" aria-controls="navbarsExample04" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbar-collapsible">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="{{pathFor 'pageMonsterList'}}">My Monsters</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="{{pathFor 'pageMonsterCreate'}}">New Monster</a>
+                    </li>
+                </ul>
+                {{>loginButtons}}
+            </div>
+        </div>
+    </nav>
+    <div class="container main">
+        {{>yield}}
+    </div>
+</template>

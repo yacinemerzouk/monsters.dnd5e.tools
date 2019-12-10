@@ -1,0 +1,17 @@
+<!-- /client/page-monster-list.html -->
+<template name="pageMonsterList">
+
+    {{#if currentUser}}
+
+        <h1>My Monsters</h1>
+
+        {{> componentMonsterList}}
+
+    {{else}}
+
+        <div class="alert alert-danger" role="alert">
+            Please log in or create an account to view this page.
+        </div>
+
+    {{/if}}
+</template>

@@ -1,0 +1,17 @@
+<!-- /client/page-monster-create.html -->
+<template name="pageMonsterCreate">
+
+    {{#if currentUser}}
+
+        <h1>New Monster</h1>
+        {{> componentMonsterForm}}
+
+    {{else}}
+
+        <div class="alert alert-danger" role="alert">
+            Please log in or create an account to view this page.
+        </div>
+
+    {{/if}}
+
+</template>

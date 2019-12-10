@@ -1,0 +1,17 @@
+<!-- /monster-list/client/monster-list.html -->
+<template name="componentMonsterList">
+
+    {{#each monster in monsters}}
+
+        <div class="card">
+            <div class="card-body">
+                <h5 class="card-title">{{monster.name}}</h5>
+                <a href="{{pathFor 'pageMonsterView' monsterId=monster._id}}" class="card-link">View</a>
+                <a href="{{pathFor 'pageMonsterEdit' monsterId=monster._id}}" class="card-link">Edit</a>
+                <a href="#" class="card-link" hook="delete-monster" data-monster-id="{{monster._id}}">Delete</a>
+            </div>
+        </div>
+
+    {{/each}}
+
+</template>
