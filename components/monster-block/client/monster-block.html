@@ -23,73 +23,49 @@
 </template>
 
 <template name="monsterBlockHTML">
-    <div style="font-family: sans-serif; width: 100%; max-width: 400px; font-size: 12px; line-height: 16px; background-color: #dac5ae ;border-top: 3px double #660000; border-bottom: 3px double #660000; padding: 10px">
-        <div style="padding-bottom: 10px; border-bottom: 2px solid #660000;">
-            <h2 style="font-family: serif; color: #660000; font-variant: small-caps; font-size: 24px; margin: 0 0 5px 0; line-height: 24px; font-weight: bold;">{{monster.name}}</h2>
-            <h6 style="font-family: serif; margin: 0; font-size: 14px; line-height: 14px; font-weight: normal;"><i>{{monster.category}}</i></h6>
-        </div>
-        <div style="padding: 10px 0; border-bottom: 2px solid #660000;">
-            <div style="color: #660000;"><b>Armor Class</b> {{monster.ac}}</div>
-            <div style="color: #660000;"><b>Hit Points</b> {{monster.hp}}</div>
-            <div style="color: #660000;"><b>Speed</b> {{monster.speed}}</div>
-        </div>
-        <div style="padding: 10px 0; border-bottom: 2px solid #660000;">
-            <table style="width: 100%; text-align: center; font-size: 12px; margin: 0; background: transparent; border: none;" border="0" cellpadding="0" cellspacing="0">
-                <tr>
-                    <th style="color: #660000; padding: 0">STR</th>
-                    <th style="color: #660000; padding: 0">DEX</th>
-                    <th style="color: #660000; padding: 0">CON</th>
-                    <th style="color: #660000; padding: 0">INT</th>
-                    <th style="color: #660000; padding: 0">WIS</th>
-                    <th style="color: #660000; padding: 0">CHA</th>
-                </tr>
-                <tr style="background: transparent;">
-                    <td style="color: #660000; padding: 0">{{monster.str}} ({{statModifier monster.str}})</td>
-                    <td style="color: #660000; padding: 0">{{monster.dex}} ({{statModifier monster.dex}})</td>
-                    <td style="color: #660000; padding: 0">{{monster.con}} ({{statModifier monster.con}})</td>
-                    <td style="color: #660000; padding: 0">{{monster.int}} ({{statModifier monster.int}})</td>
-                    <td style="color: #660000; padding: 0">{{monster.wis}} ({{statModifier monster.wis}})</td>
-                    <td style="color: #660000; padding: 0">{{monster.cha}} ({{statModifier monster.cha}})</td>
-                </tr>
-            </table>
-        </div>
-        <div style="padding: 10px 0; border-bottom: 2px solid #660000;">
-            <div style="color: #660000;"><b>Skills</b> {{monster.skills}}</div>
-            <div style="color: #660000;"><b>Senses</b> {{monster.senses}}</div>
-            <div style="color: #660000;"><b>Languages</b> {{monster.languages}}</div>
-            <div style="color: #660000;"><b>Challenge</b> {{monster.challenge}}</div>
-        </div>
-
-        {{#if monster.ability1Name}}
-            <div style="padding: 10px 0 0;">
-                <p style="margin: 0 0 5px 0;"><b><i>{{monster.ability1Name}}</i></b> {{monster.ability1Description}}</p>
-            </div>
-        {{/if}}
-        {{#if monster.ability2Name}}
-            <div style="padding: 10px 0 0;">
-                <p style="margin: 0 0 5px 0;"><b><i>{{monster.ability2Name}}</i></b> {{monster.ability2Description}}</p>
-            </div>
-        {{/if}}
-        {{#if monster.ability3Name}}
-            <div style="padding: 10px 0 0;">
-                <p style="margin: 0 0 5px 0;"><b><i>{{monster.ability3Name}}</i></b> {{monster.ability3Description}}</p>
-            </div>
-        {{/if}}
-        {{#if monster.ability4Name}}
-            <div style="padding: 10px 0 0;">
-                <p style="margin: 0 0 5px 0;"><b><i>{{monster.ability4Name}}</i></b> {{monster.ability4Description}}</p>
-            </div>
-        {{/if}}
-        {{#if monster.ability5Name}}
-            <div style="padding: 10px 0 0;">
-                <p style="margin: 0 0 5px 0;"><b><i>{{monster.ability5Name}}</i></b> {{monster.ability5Description}}</p>
-            </div>
-        {{/if}}
-        {{#if monster.action1Name}}
-            <div>
-                <h4 style="margin: 0 0 10px 0; font-size: 18px; font-weight: normal; line-height: 22px; border-bottom: 1px solid #660000; font-variant: small-caps; color: #660000">Actions</h4>
-                <p style="margin: 0 0 5px 0;"><i><b>{{monster.action1Name}}.</b></i> {{monster.action1Description}}</p>
-            </div>
-        {{/if}}
-    </div>
+<div id="=== START {{monster.name}} ==="></div>
+<div style="font-family: sans-serif; width: 100%; max-width: 400px; font-size: 12px; line-height: 16px; background-color: #dac5ae ;border-top: 3px double #660000; border-bottom: 3px double #660000; padding: 10px">
+<div style="padding-bottom: 10px; border-bottom: 2px solid #660000;">
+<h2 style="font-family: serif; color: #660000; font-variant: small-caps; font-size: 24px; margin: 0 0 5px 0; line-height: 24px; font-weight: bold;">{{monster.name}}</h2>
+<h6 style="font-family: serif; margin: 0; font-size: 14px; line-height: 14px; font-weight: normal;"><i>{{monster.category}}</i></h6>
+</div>
+<div style="padding: 10px 0; border-bottom: 2px solid #660000;">
+<div style="color: #660000;"><b>Armor Class</b> {{monster.ac}}</div>
+<div style="color: #660000;"><b>Hit Points</b> {{monster.hp}}</div>
+<div style="color: #660000;"><b>Speed</b> {{monster.speed}}</div>
+</div>
+<div style="padding: 10px 0; border-bottom: 2px solid #660000;">
+<table style="width: 100%; text-align: center; font-size: 12px; margin: 0; background: transparent; border: none;" border="0" cellpadding="0" cellspacing="0">
+<tr>
+<th style="color: #660000; padding: 0">STR</th>
+<th style="color: #660000; padding: 0">DEX</th>
+<th style="color: #660000; padding: 0">CON</th>
+<th style="color: #660000; padding: 0">INT</th>
+<th style="color: #660000; padding: 0">WIS</th>
+<th style="color: #660000; padding: 0">CHA</th>
+</tr>
+<tr style="background: transparent;">
+<td style="color: #660000; padding: 0">{{monster.str}} ({{statModifier monster.str}})</td>
+<td style="color: #660000; padding: 0">{{monster.dex}} ({{statModifier monster.dex}})</td>
+<td style="color: #660000; padding: 0">{{monster.con}} ({{statModifier monster.con}})</td>
+<td style="color: #660000; padding: 0">{{monster.int}} ({{statModifier monster.int}})</td>
+<td style="color: #660000; padding: 0">{{monster.wis}} ({{statModifier monster.wis}})</td>
+<td style="color: #660000; padding: 0">{{monster.cha}} ({{statModifier monster.cha}})</td>
+</tr>
+</table>
+</div>
+<div style="padding: 10px 0; border-bottom: 2px solid #660000;">
+<div style="color: #660000;"><b>Skills</b> {{monster.skills}}</div>
+<div style="color: #660000;"><b>Senses</b> {{monster.senses}}</div>
+<div style="color: #660000;"><b>Languages</b> {{monster.languages}}</div>
+<div style="color: #660000;"><b>Challenge</b> {{monster.challenge}}</div>
+</div>
+{{#if monster.ability1Name}}<div style="padding: 10px 0 0;"><p style="margin: 0 0 5px 0;"><b><i>{{monster.ability1Name}}</i></b> {{monster.ability1Description}}</p></div>{{/if}}
+{{#if monster.ability2Name}}<div style="padding: 10px 0 0;"><p style="margin: 0 0 5px 0;"><b><i>{{monster.ability2Name}}</i></b> {{monster.ability2Description}}</p></div>{{/if}}
+{{#if monster.ability3Name}}<div style="padding: 10px 0 0;"><p style="margin: 0 0 5px 0;"><b><i>{{monster.ability3Name}}</i></b> {{monster.ability3Description}}</p></div>{{/if}}
+{{#if monster.ability4Name}}<div style="padding: 10px 0 0;"><p style="margin: 0 0 5px 0;"><b><i>{{monster.ability4Name}}</i></b> {{monster.ability4Description}}</p></div>{{/if}}
+{{#if monster.ability5Name}}<div style="padding: 10px 0 0;"><p style="margin: 0 0 5px 0;"><b><i>{{monster.ability5Name}}</i></b> {{monster.ability5Description}}</p></div>{{/if}}
+{{#if monster.action1Name}}<div><h4 style="margin: 0 0 10px 0; font-size: 18px; font-weight: normal; line-height: 22px; border-bottom: 1px solid #660000; font-variant: small-caps; color: #660000">Actions</h4><p style="margin: 0 0 5px 0;"><i><b>{{monster.action1Name}}.</b></i> {{monster.action1Description}}</p></div>{{/if}}
+</div>
+<div id="=== END {{monster.name}} ==="></div>
 </template>

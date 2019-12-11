@@ -12,3 +12,9 @@ Template.registerHelper('statModifier', function(stat) {
     return modifier;
 
 });
+
+Template.registerHelper('minifyString', function(string) {
+
+    return string.replace(' ', '').replace('\n', '');
+
+});
